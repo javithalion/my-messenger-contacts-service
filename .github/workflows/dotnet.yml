@@ -18,10 +18,10 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Messenger.Contacts.sln
       working-directory: src
     - name: Build
-      run: dotnet build Messenger.Contacts.sln --no-restore 
+      run: dotnet build Messenger.Contacts.sln --configuration Release --no-restore 
       working-directory: src
     - name: Test
       run: dotnet test --no-build --verbosity normal  
