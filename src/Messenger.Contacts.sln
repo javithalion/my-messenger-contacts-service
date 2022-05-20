@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32002.261
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messenger.Contacts.WebApi", "Messenger.Contacts.WebApi\Messenger.Contacts.WebApi.csproj", "{E9C11D04-36C1-4F07-800B-AA78A300BDE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messenger.Contacts.WebApi", "Messenger.Contacts.WebApi\Messenger.Contacts.WebApi.csproj", "{E9C11D04-36C1-4F07-800B-AA78A300BDE9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3B1C2B8F-8242-4075-B84F-A0B509397045}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E9C11D04-36C1-4F07-800B-AA78A300BDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9C11D04-36C1-4F07-800B-AA78A300BDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9C11D04-36C1-4F07-800B-AA78A300BDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1C2B8F-8242-4075-B84F-A0B509397045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1C2B8F-8242-4075-B84F-A0B509397045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1C2B8F-8242-4075-B84F-A0B509397045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1C2B8F-8242-4075-B84F-A0B509397045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

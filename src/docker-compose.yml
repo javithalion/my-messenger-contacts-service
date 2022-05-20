@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  messenger.contacts.webapi:
+    image: ${DOCKER_REGISTRY-}messengercontactswebapi
+    build:
+      context: .
+      dockerfile: Messenger.Contacts.WebApi/Dockerfile
+
+  messengercontactswebapi-dapr:
+    image: "daprio/daprd:latest"
+    command: [ "./daprd", "-app-id", "Messenger.Contacts.WebApi", "-app-port", "80" ]
+    depends_on:
+      - messenger.contacts.webapi
+    network_mode: "service:messenger.contacts.webapi"

@@ -28,6 +28,7 @@ namespace Messenger.Contacts.WebApi
         {
 
             services.AddControllers();
+            services.AddDaprClient();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Messenger.Contacts.WebApi", Version = "v1" });
